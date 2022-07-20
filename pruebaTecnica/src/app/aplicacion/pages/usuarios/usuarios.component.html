@@ -1,0 +1,19 @@
+<table class="table table-hover">
+    <thead class="thead-ligth">
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Email</th>
+        <th scope="col">Ciudad</th>
+        <th scope="col">Fono</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let persona of personas'>
+        <td>{{persona.name}}</td>
+        <td>{{persona.email}}</td>
+        <td>{{persona.address.city}}</td>
+        <td>{{persona.phone}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
